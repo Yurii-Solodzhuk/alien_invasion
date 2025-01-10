@@ -17,13 +17,27 @@ cd alien_invasion
 virtualenv -p python3 .venv
 ```
 
-3. Install requirements
+3. Activate venv
+
+Linux:
+
+```bash 
+source .venv/bin/activate
+```
+
+Windows:
+
+```bash 
+.\.venv\Scripts\activate
+```
+
+4. Install requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Enjoy the game
+5. Enjoy the game
 
 ```bash
 python main.py
