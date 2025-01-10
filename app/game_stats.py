@@ -3,7 +3,7 @@ class GameStats:
         self.settings = ai_game.settings
         self.reset_stats()
         self.game_active = False
-        with open('files/high_score.txt') as f:
+        with open('app/files/high_score.txt') as f:
             high_score = int(f.read())
         self.high_score = high_score
 

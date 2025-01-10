@@ -1,7 +1,7 @@
 import pygame.font
 from pygame.sprite import Group
 
-from ship import Ship
+from app.ship import Ship
 
 
 class Scoreboard():
@@ -37,7 +37,7 @@ class Scoreboard():
 
     def prep_high_score(self):
         high_score = round(self.stats.high_score, -1)
-        with open('files/high_score.txt', 'w') as f:
+        with open('app/files/high_score.txt', 'w') as f:
             f.write(str(high_score))
         high_score_str = "Record: {:,}".format(high_score)
         self.high_score_image = self.font.render(high_score_str, True, self.text_color, self.settings.bg_color)
