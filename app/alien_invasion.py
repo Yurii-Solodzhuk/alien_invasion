@@ -3,13 +3,13 @@ from time import sleep
 
 import pygame
 
-from bullet import Bullet
-from settings import Settings
-from game_stats import GameStats
-from scoreboard import Scoreboard
-from button import Button
-from ship import Ship
-from alien import Alien
+from app.bullet import Bullet
+from app.settings import Settings
+from app.game_stats import GameStats
+from app.scoreboard import Scoreboard
+from app.button import Button
+from app.ship import Ship
+from app.alien import Alien
 
 
 class AlienInvasion:
@@ -22,7 +22,7 @@ class AlienInvasion:
 
         # self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
 
-        #Повноекранний режим
+        # Повноекранний режим
         self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
         self.settings.screen_width = self.screen.get_rect().width
         self.settings.screen_height = self.screen.get_rect().height
